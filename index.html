@@ -5,245 +5,264 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <section class="top-nav">
-      <nav class="top-nav-container">
-        <ul class="top-nav-list">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </section>
-    <header>
-      <nav class="nav-container"></nav>
-    </header>
-    <section>
-      <div class="body-container">
-        <div class="profile-div-img">
-          <img
-            src="https://adamkosovic.github.io/portfolio/image/adamkosovic.jpg"
-            alt="Profilbild"
-            class="profile-img"
-          />
-        </div>
-        <div class="profile-info">
-          <p>Hello, I'm</p>
-          <h2>Adam Kosovic</h2>
-          <h4>Frontend Developer</h4>
-          <div>
-            <button class="profile-button1">Download CV</button>
-            <button class="profile-button2">Contact Me</button>
+      <header class="top-nav">
+        <nav class="top-nav-container">
+          <ul class="top-nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <div class="body-container">
+          <div class="profile-div-img">
+            <img
+              src="https://adamkosovic.github.io/portfolio/image/IMG_7302 2.jpg"
+              alt="Profilbild"
+              class="profile-img"
+            />
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="aboutMe">
-        <div class="aboutMe-titel">
-          <p>Get To Know More</p>
-          <h2>About Me</h2>
-        </div>
-        <div class="aboutMe-2">
-          <div class="aboutMe-info">
+          <div class="profile-info">
+            <p>Hello, I'm</p>
+            <h2>Adam Kosovic</h2>
+            <h4>Frontend Developer</h4>
             <div>
-              <img
-                src="https://adamkosovic.github.io/portfolio/image/IMG_7302 2.jpg"
-                alt="bild på mig"
-                class="aboutMe-img"
-              />
+              <button class="profile-button1">Download CV</button>
+              <button class="profile-button2">
+              <a href="mailto:adam.kosovic@icloud.com" target="_blank">Contact Me</a> 
             </div>
-            <div class="aboutMe-info-detail">
-              <img
-                src="https://adamkosovic.github.io/portfolio/image/medal.webp"
-                alt="medalj"
-                class="aboutMe-icon"
-              />
-              <h5>Experience</h5>
-              <p>2+ years</p>
-              <p>Frontend Development</p>
-              <div class="experience-details">
-                <p>• Web Development</p>
-                <p>• UI/UX Design</p>
-                <p>• Responsive Design</p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="aboutMe">
+          <div class="aboutMe-titel">
+            <p>Get To Know More</p>
+            <h2>About Me</h2>
+          </div>
+          <div class="aboutMe-2">
+            <div class="aboutMe-info">
+              <div class="aboutMe-info-detail">
+                <img
+                  src="./image/skillsIcon.svg"
+                  alt="skills"
+                  class="aboutMe-icon"
+                />
+                <h5>Skills</h5>
+                <div class="skills-details">
+                  <p>• HTML</p>
+                  <p>• CSS</p>
+                  <p>• JavaScript</p>
+                  <p>• Angular</p>
+                  <p>• React</p>
+                </div>
               </div>
-            </div>
-            <div class="aboutMe-info-detail2">
-              <img
-                src="https://adamkosovic.github.io/portfolio/image/education.webp"
-                alt="group-people"
-                class="aboutMe-icon"
-              />
-              <h5>Education</h5>
-              <p>EC Utbildning, Växjö</p>
-              <div class="education-details">
-                <p>• Frontend Development</p>
-                <p>• Web Design</p>
-                <p>• Digital Marketing</p>
+              <div class="aboutMe-info-detail">
+                <img
+                  src="https://adamkosovic.github.io/portfolio/image/medal.webp"
+                  alt="medalj"
+                  class="aboutMe-icon"
+                />
+                <h5>Experience</h5>
+                <p>2+ years</p>
+                <p>Frontend Development</p>
+                <div class="experience-details">
+                  <p>• Frontend Development</p>
+                  <p>• Web Development</p>
+                  <p>• UI/UX Design</p>
+                  <p>• Responsive Design</p>
+                </div>
+              </div>
+              <div class="aboutMe-info-detail">
+                <img
+                  src="https://adamkosovic.github.io/portfolio/image/education.webp"
+                  alt="group-people"
+                  class="aboutMe-icon"
+                />
+                <h5>Education</h5>
+                <p>EC Utbildning, Växjö</p>
+                <div class="education-details">
+                  <p>• Frontend Development</p>
+                  <p>• Backend Development</p>
+                  <p>• Resposniv Design</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="experience">
-      <div class="section-experiance">
-        <div class="div-experiance">
-          <p>Explore my</p>
-          <h2>Experience</h2>
-        </div>
-        <div>
-          <div class="experaince-list">
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Angular</li>
-              <li>UX/UI</li>
-            </ul>
+      </section>
+      <section id="experience">
+        <div class="section-experiance">
+          <div class="div-experiance">
+            <p>Explore my</p>
+            <h2>Experience</h2>
+          </div>
+          <div>
+            <div class="experaince-list">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>UX/UI</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="projects">
+        <div class="section-projects">
+          <div class="div-projects">
+            <p>Browse My Recent</p>
+            <h2>Projects</h2>
+          </div>
+          <div class="projects-container">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./image/bookquote.png" alt="BookQuote" />
+              </div>
+              <div class="project-content">
+                <h3>BookQuote</h3>
+                <p>
+                  A full-stack web application for managing books and quotes,
+                  built with Angular frontend and .NET backend.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/adamkosovic/BookQuote"
+                    target="_blank"
+                    class="project-button"
+                    >Github</a
+                  >
+                </div>
+              </div>
+            </div>
 
-    <section id="projects">
-      <div class="section-projects">
-        <div class="div-projects">
-          <p>Browse My Recent</p>
-          <h2>Projects</h2>
-        </div>
-        <div class="projects-container">
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="https://adamkosovic.github.io/portfolio/image/1000_F_1007984603_5dhbPHcq44FkSD8QNlLUHbswP6uDCZ2z.jpg"
-                alt="Project One"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Project One</h3>
-              <p>A responsive web application built with React and Node.js</p>
-              <div class="project-links">
-                <a href="#" class="project-button">Live Demo</a>
-                <a href="#" class="project-button">GitHub</a>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./image/e-commerce.png" alt="E-commerce" />
+              </div>
+              <div class="project-content">
+                <h3>E-commerce</h3>
+                <p>
+                  A full-stack e-commerce platform built with Angular and ASP.NET
+                  Core, shopping cart, user authentication, and admin product
+                  management.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/adamkosovic/E-commerce"
+                    target="_blank"
+                    class="project-button"
+                    >Github</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="https://adamkosovic.github.io/portfolio/image/1000_F_1007984603_5dhbPHcq44FkSD8QNlLUHbswP6uDCZ2z.jpg"
-                alt="Project Two"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Project Two</h3>
-              <p>E-commerce platform with Angular and Firebase</p>
-              <div class="project-links">
-                <a href="#" class="project-button">Live Demo</a>
-                <a href="#" class="project-button">GitHub</a>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./image/portfolio.png" alt="Project Three" />
               </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="https://adamkosovic.github.io/portfolio/image/1000_F_1007984603_5dhbPHcq44FkSD8QNlLUHbswP6uDCZ2z.jpg"
-                alt="Project Three"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Project Three</h3>
-              <p>Portfolio website using HTML, CSS, and JavaScript</p>
-              <div class="project-links">
-                <a href="#" class="project-button">Live Demo</a>
-                <a href="#" class="project-button">GitHub</a>
+              <div class="project-content">
+                <h3>Portfolio</h3>
+                <p>Portfolio website using HTML, CSS, and JavaScript</p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/adamkosovic/Portfolio"
+                    target="_blank"
+                    class="project-button"
+                    >Github</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="section-contactMe">
-        <div class="div-contactMe">
-          <p>Get in Touch</p>
-          <h2>Contact Me</h2>
-        </div>
-        <div class="contact-container">
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                ></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
+      </section>
+      <section id="contact">
+        <div class="section-contactMe">
+          <div class="div-contactMe">
+            <p>Get in Touch</p>
+            <h2>Contact Me</h2>
+          </div>
+          <div class="contact-container">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3>Email</h3>
+                <p>
+                  <a
+                    href="mailto:adam.kosovic@icloud.com"
+                    class="contact-email-link"
+                    >adam.kosovic@icloud.com</a
+                  >
+                </p>
+              </div>
             </div>
-            <div class="contact-info">
-              <h3>Email</h3>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h3>Adam Kosovic</h3>
+              <p>Frontend Developer</p>
+            </div>
+            <div class="footer-section">
+              <h3>Contact</h3>
               <p>
-                <a
-                  href="mailto:adam.kosovic@icloud.com"
-                  class="contact-email-link"
+                <a href="mailto:adam.kosovic@icloud.com" class="email-link"
                   >adam.kosovic@icloud.com</a
                 >
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Adam Kosovic</h3>
-            <p>Frontend Developer</p>
-          </div>
-          <div class="footer-section">
-            <h3>Contact</h3>
-            <p>
-              <a href="mailto:adam.kosovic@icloud.com" class="email-link"
-                >adam.kosovic@icloud.com</a
-              >
-            </p>
-          </div>
-          <div class="footer-section">
-            <h3>Follow Me</h3>
-            <div class="social-links">
-              <a
-                href="https://github.com/adamkosovic"
-                class="social-link"
-                target="_blank"
-                >GitHub</a
-              >
-              <a href="#" class="social-link">LinkedIn</a>
-              <a href="#" class="social-link">Twitter</a>
+            <div class="footer-section">
+              <h3>Follow Me</h3>
+              <div class="social-links">
+                <a
+                  href="https://github.com/adamkosovic"
+                  class="social-link"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/adamkosovic/"
+                  class="social-link"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </div>
             </div>
           </div>
+          <div class="footer-bottom">
+            <p>&copy; 2023 Adam Kosovic. All rights reserved.</p>
+          </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2023 Adam Kosovic. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-    <script src="script.js"></script>
+      </footer>
   </body>
 </html>
