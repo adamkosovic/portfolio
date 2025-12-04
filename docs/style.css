@@ -545,6 +545,20 @@ body {
   .project-card {
     max-width: 280px;
   }
+
+  .top-nav-container {
+    padding: 10px 12px;
+  }
+
+  .top-nav-list {
+    gap: 12px;               
+    justify-content: center;
+  }
+
+  .top-nav-list li a {
+    font-size: 14px;       
+    padding: 4px 8px;     
+  }
 }
 
 @media (max-width: 480px) {
@@ -558,6 +572,15 @@ body {
   
   .project-image {
     height: 180px;
+  }
+
+  .top-nav-list {
+    gap: 8px;
+  }
+
+  .top-nav-list li a {
+    font-size: 13px;
+    padding: 3px 6px;
   }
 }
 
