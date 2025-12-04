@@ -9,17 +9,14 @@ html, body {
   overflow-x: hidden;
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
+/* plats för fixed navbaren – justera höjden vid behov */
 body {
-  padding-top: 0;
-  position: relative;
+  padding-top: 70px;
 }
 
-/* Fix any potential gap issues throughout the document */
-.top-nav, 
+/* sektioner */
 .section-experiance,
 .section-projects,
 .section-contactMe,
@@ -30,16 +27,44 @@ body {
   box-sizing: border-box;
 }
 
-.nav-container {
+/* NAVBAR – det här gör att den hänger med */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* innehållet i navbaren */
+.top-nav-container {
   display: flex;
-  justify-content: flex-start;
-  margin: auto;
+  justify-content: center;
+  margin: 0 auto;
   max-width: 1200px;
   width: 100%;
   padding: 20px;
 }
 
-.nav-container h1 {
+.top-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+.nav-container h2 {
   font-size: 28px;
   font-weight: 700;
   margin: 0;
@@ -71,13 +96,14 @@ body {
 }
 
 .nav-list li a:hover {
-  color: #007bff;
+  color: #333;
 }
 
 .nav-list li a.active {
-  color: #007bff;
+  color: #333;
   background-color: rgba(0, 123, 255, 0.1);
 }
+
 
 /* Nav slutar */
 
@@ -102,9 +128,8 @@ body {
 
 .profile-img {
   height: 300px;
-  width: 220px;
-  object-fit: cover;
-  border-radius: 8px;
+  width: 230px;
+  border-radius: 30px;
 }
 
 .profile-info {
@@ -127,7 +152,7 @@ body {
   color: #5d6d7e;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .profile-info h2 {
@@ -144,6 +169,16 @@ body {
   margin-bottom: 35px;
   color: #2c3e50;
   letter-spacing: 0.5px;
+}
+
+.profile-info a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .profile-info div {
@@ -200,6 +235,7 @@ body {
 
 /* Profile slutar */
 
+
 .aboutMe {
   padding: 120px 20px;
   margin-bottom: 60px;
@@ -240,43 +276,47 @@ body {
 .aboutMe-info {
   display: flex;
   justify-content: center;
+  gap: 20px;
   align-items: center;
-  margin-top: 50px;
-  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .aboutMe-info-detail {
   border: 2px solid grey;
   border-radius: 30px;
   text-align: center;
-  margin-left: 40px;
-  margin-right: 20px;
+  margin: 10px;
   margin-top: 30px;
   height: auto;
   width: 230px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 230px;
+  max-width: 260px;
 }
 
-.aboutMe-info-detail2 {
-  border: 2px solid grey;
-  border-radius: 30px;
-  text-align: center;
-  margin-top: 30px;
-  height: auto;
-  width: 230px;
-  padding: 20px;
+.aboutMe-info-detail:nth-child(1),
+.aboutMe-info-detail:nth-child(3) {
+  margin-top: 40px;
+}
+
+.aboutMe-info-detail:nth-child(2) {
+  margin-top: 0;
 }
 
 .experience-details,
-.education-details {
-  margin-top: 15px;
+.education-details,
+.skills-details {
   padding-top: 10px;
   border-top: 1px solid #e0e0e0;
   text-align: center;
 }
 
 .experience-details p,
-.education-details p {
+.education-details p,
+.skills-details p {
   font-size: 12px;
   color: #666;
   margin: 5px 0;
@@ -401,9 +441,12 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  grid-auto-rows: 1fr;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -412,12 +455,9 @@ body {
   border: 1px solid #eaeaea;
   max-width: 320px;
   margin: 0 auto;
+  height: 100%;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
 
 .project-image {
   width: 100%;
@@ -428,18 +468,16 @@ body {
 
 .project-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.4s ease;
 }
 
-.project-card:hover .project-image img {
-  transform: scale(1.03);
-}
-
 .project-content {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   background: white;
+  flex: 1;
 }
 
 .project-content h3 {
@@ -458,8 +496,8 @@ body {
 }
 
 .project-links {
-  display: flex;
-  gap: 10px;
+  margin-top: auto;     
+  align-self: flex-start; 
 }
 
 .project-button {
@@ -681,11 +719,11 @@ body {
 }
 
 .bottom-nav-list li a:hover {
-  color: #007bff;
+  color: #2c3e50;
 }
 
 .bottom-nav-list li a.active {
-  color: #007bff;
+  color: #2c3e50;
   background-color: rgba(0, 123, 255, 0.1);
 }
 
@@ -772,7 +810,6 @@ html {
     padding: 60px 20px;
   }
 }
-
 
 /* Footer Styles */
 .footer {
